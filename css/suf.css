@@ -1,0 +1,227 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: 0.3s;
+}
+body, html{
+	height: 100%;
+	width: 100%;
+	background: hsl(0, 100%, 74%);
+	background-image: url(../images/bg-intro-mobile.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container{
+	width: 90vw;
+	/*border: 1px solid black;*/
+	margin: auto;
+}
+.topPart{
+	position: relative;
+	width: 100%;
+	/*border: 2px solid red;*/
+}
+.header{
+	position: relative;
+	width: 100%;
+	/*border: 1px solid green;*/
+	text-align: center;
+	margin-top: 20%;
+}
+.header span{
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 35px;
+}
+
+.websiteDescription{
+	position: relative;
+	width: 100%;
+	/*border: 1px solid gold;*/
+	text-align: center;
+	margin-top: 5%;
+}
+.websiteDescription span{
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+}
+.promotion{
+	width: 100%;
+	/*border: 2px solid purple;*/
+	border-radius: 15px;
+	background: hsl(248, 32%, 49%);
+	text-align: center;
+	margin-top: 10%;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	padding: 5% 20% 5% 20%;
+	box-shadow: 0 7px 0 rgba(0,0,0,0.2);
+}
+.promotion span{
+	font-weight: 500;
+}
+
+.bottomPart{
+	position: relative;
+	width: 100%;
+	/*border: 2px solid gold;*/
+}
+.loginBox{
+	position: relative;
+	width: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+	/*border: 2px solid green;*/
+	border-radius: 10px;
+	text-align: center;
+	padding: 5%;
+	background: white;
+	margin-top: 5%;
+	box-shadow: 0 7px 0 rgba(0,0,0,0.2);
+}
+.infoBox{
+	width: 90%;
+	padding: 5%;
+	border-radius: 5px;
+	border: 1px solid silver;
+}
+.fname{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 15px;	
+}
+.lname, .email, .password{
+	margin-top: 5%;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+}
+.freeTrial{
+	position: relative;
+	width: 90%;
+	border-radius: 10px;
+	border: 1px solid hsl(154, 59%, 51%);
+	text-align: center;
+	padding: 5%;
+	background: hsl(154, 59%, 51%);
+	margin-top: 5%;
+}
+input.freeTrial{
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.freeTrial:hover{
+	cursor: pointer;
+	width: 88%;
+}
+.termsAndServices{
+	position: relative;
+	width: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 10px;
+	text-align: center;
+	padding: 5%;
+	margin-top: 5%;
+}
+.termsAndServices p{
+	color: lightgrey;
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+}
+.termsAndServices span{
+	color: hsl(0, 100%, 74%);
+	font-weight: 600;
+}
+.termsAndServices span:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.iconError{
+	background-image: url(../images/icon-error.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 98% 50%;
+	background-size: 10%;
+}
+.promotionDesktop{
+	display: none;
+}
+/*------------------------------------------------------------------*/
+
+@media screen and (min-width: 700px){
+body, html{
+	background-image: url(../images/bg-intro-mobile.png);
+	background-position: center;
+	background-repeat: repeat;
+	background-size: contain;
+}
+.container{
+	/*border: 1px solid black;*/
+	display: flex;
+	align-items: center;
+}
+.topPart{
+	/*border: 2px solid green;*/
+}
+.bottomPart{
+	/*border: 2px solid gold;*/
+}
+
+.header{
+	text-align: left;
+}
+.websiteDescription{
+	text-align: left;
+}
+.websiteDescription span{
+	font-size: 18px;	
+}
+.promotion{
+	display: none;
+}
+.header span{
+	font-size: 50px;
+}
+.promotionDesktop{
+	display: block;
+	width: 100%;
+	/*border: 2px solid red;*/
+	border-radius: 15px;
+	background: hsl(248, 32%, 49%);
+	text-align: center;
+	margin-top: 10%;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	padding: 3% 10% 3% 10%;
+	box-shadow: 0 7px 0 rgba(0,0,0,0.2);		
+}
+.promotionDesktop span{
+	font-weight: 600;
+}
+.loginBox{
+	width: 100%;
+}
+.infoBox{
+	padding: 3%;
+}
+.termsAndServices{
+	/*border: 1px solid green;*/
+	margin-top: 0%;
+	padding: 3%;
+}
+.termsAndServices p{
+	font-size: 12px;
+}
+
+}
